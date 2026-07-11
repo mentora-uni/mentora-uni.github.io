@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentora University — Ưu Đãi 50% Dành Cho Cán Bộ Vingroup | Tháng 7/2026</title>
+<meta name="description" content="Chương trình ưu đãi giảm 50% học phí dành riêng cho cán bộ Vingroup tháng 7/2026. Mentora University — Đại học tư thục #1 Đông Nam Á về đào tạo lãnh đạo & nhân lực thực chiến.">
+<style>
+/* ==================== RESET & BASE ==================== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0a1628;color:#e8eef5;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+section{position:relative}
+
+/* ==================== CSS VARIABLES ==================== */
+:root{
+  --navy-900:#0a1628;--navy-800:#0d1b2a;--navy-700:#102438;--navy-600:#1a3a5c;
+  --gold:#d4a017;--gold-light:#f0c040;--gold-glow:rgba(212,160,23,.3);
+  --cyan:#00d4ff;--cyan-dim:rgba(0,212,255,.15);
+  --white:#e8eef5;--gray:#8a9bb0;--gray-dim:#5a6b80;
+  --radius:12px;--transition:cubic-bezier(.23,1,.32,1);
+}
+
+/* ==================== TYPOGRAPHY ==================== */
+h1,h2,h3,h4{font-weight:700;line-height:1.25;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,5vw,3.8rem)}
+h2{font-size:clamp(1.6rem,3.5vw,2.6rem)}
+h3{font-size:clamp(1.2rem,2.5vw,1.6rem)}
+p{font-size:1rem;color:var(--gray);max-width:65ch}
+.gold-text{color:var(--gold-light)}
+.cyan-text{color:var(--cyan)}
+.section-tag{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;padding:4px 14px;border:1px solid var(--gold-glow);border-radius:20px;background:rgba(212,160,23,.08)}
+.section-title{margin-bottom:1rem}
+.section-subtitle{font-size:1.05rem;color:var(--gray);margin-bottom:3rem;max-width:60ch}
+
+/* ==================== LAYOUT ==================== */
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+@media(min-width:768px){.container{padding:0 2rem}}
+section{padding:5rem 0}
+@media(min-width:768px){section{padding:6rem 0}}
+
+/* ==================== NAVBAR ==================== */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;transition:all .3s var(--transition)}
+.navbar.scrolled{background:rgba(10,22,40,.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(212,160,23,.15);padding:.6rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.nav-logo{display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:1.2rem;color:var(--white)}
+.nav-logo img{width:36px;height:36px}
+.nav-logo span{background:linear-gradient(135deg,var(--gold-light),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-size:.9rem;color:var(--gray);transition:color .2s;position:relative}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width .3s var(--transition)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy-900)!important;padding:.5rem 1.2rem;border-radius:8px;font-weight:600;font-size:.85rem;transition:transform .2s,box-shadow .2s}
+.nav-cta:hover{transform:scale(1.05);box-shadow:0 4px 20px var(--gold-glow)}
+.nav-cta::after{display:none}
+.nav-toggle{display:none;background:none;border:none;color:var(--white);font-size:1.5rem;cursor:pointer}
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy-800);flex-direction:column;padding:1.5rem;gap:1rem;border-bottom:1px solid rgba(212,160,23,.15)}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+}
+
+/* ==================== HERO ==================== */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 1.5rem 4rem;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,40,.7) 0%,rgba(10,22,40,.85) 50%,var(--navy-900) 100%)}
+.hero-content{position:relative;z-index:2;max-width:900px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(212,160,23,.12);border:1px solid var(--gold-glow);border-radius:30px;padding:.5rem 1.2rem;font-size:.85rem;font-weight:600;color:var(--gold-light);margin-bottom:1.5rem;animation:fadeInDown .8s var(--transition)}
+.hero-badge .pulse{width:8px;height:8px;background:var(--gold-light);border-radius:50%;animation:pulse 2s infinite}
+.hero h1{margin-bottom:1rem;animation:fadeInUp .8s .1s both}
+.hero h1 .highlight{background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-block}
+.hero-subtitle{font-size:clamp(1rem,2vw,1.25rem);color:var(--gray);margin-bottom:2rem;max-width:700px;margin-left:auto;margin-right:auto;animation:fadeInUp .8s .2s both}
+.hero-discount{display:inline-block;background:linear-gradient(135deg,rgba(212,160,23,.15),rgba(0,212,255,.08));border:2px solid var(--gold);border-radius:var(--radius);padding:1.5rem 2.5rem;margin-bottom:2rem;animation:fadeInUp .8s .3s both}
+.hero-discount .percent{font-size:clamp(3rem,8vw,5rem);font-weight:800;line-height:1;background:linear-gradient(135deg,var(--gold-light),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-discount .label{font-size:.9rem;color:var(--gray);letter-spacing:.1em;text-transform:uppercase;margin-top:.5rem}
+.hero-cta-group{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeInUp .8s .4s both}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.8rem;border-radius:10px;font-weight:600;font-size:.95rem;transition:all .2s var(--transition);cursor:pointer;border:none}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy-900)}
+.btn-primary:hover{transform:scale(1.05);box-shadow:0 8px 30px var(--gold-glow)}
+.btn-outline{background:transparent;border:1.5px solid var(--cyan);color:var(--cyan)}
+.btn-outline:hover{background:var(--cyan-dim);transform:scale(1.05)}
+.btn:active{transform:scale(.97)}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;color:var(--gray-dim);font-size:.8rem;animation:bounce 2s infinite}
+.hero-scroll .arrow{display:block;width:20px;height:20px;border-right:2px solid var(--gray-dim);border-bottom:2px solid var(--gray-dim);transform:rotate(45deg);margin:.5rem auto 0}
+
+/* ==================== COUNTDOWN ==================== */
+.countdown-section{padding:3rem 0;background:var(--navy-800);border-top:1px solid rgba(212,160,23,.1);border-bottom:1px solid rgba(212,160,23,.1)}
+.countdown-inner{text-align:center}
+.countdown-label{font-size:.85rem;color:var(--gray);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+.countdown-timer{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+.countdown-item{background:var(--navy-700);border:1px solid rgba(212,160,23,.2);border-radius:var(--radius);padding:1rem 1.5rem;min-width:90px}
+.countdown-item .num{font-size:2rem;font-weight:800;color:var(--gold-light);font-variant-numeric:tabular-nums}
+.countdown-item .unit{font-size:.75rem;color:var(--gray);text-transform:uppercase;letter-spacing:.1em}
+
+/* ==================== ABOUT ==================== */
+.about{background:var(--navy-900)}
+.about-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center}
+@media(min-width:900px){.about-grid{grid-template-columns:1.2fr 1fr}}
+.about-text h2{margin-bottom:1.5rem}
+.about-text p{margin-bottom:1rem}
+.about-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}
+.stat-card{background:var(--navy-800);border:1px solid rgba(212,160,23,.15);border-radius:var(--radius);padding:1.5rem;text-align:center;transition:transform .3s,border-color .3s}
+.stat-card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.stat-card .num{font-size:2rem;font-weight:800;color:var(--gold-light)}
+.stat-card .label{font-size:.8rem;color:var(--gray);margin-top:.3rem}
+.about-image{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.about-image img{width:100%;height:400px;object-fit:cover}
+.about-image::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 50%,rgba(10,22,40,.5));pointer-events:none}
+
+/* ==================== PROBLEM ==================== */
+.problem{background:var(--navy-800)}
+.problem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2rem}
+.problem-card{background:var(--navy-700);border:1px solid rgba(0,212,255,.1);border-radius:var(--radius);padding:2rem;transition:all .3s var(--transition)}
+.problem-card:hover{border-color:var(--cyan);transform:translateY(-4px);box-shadow:0 10px 40px rgba(0,212,255,.1)}
+.problem-card .icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--cyan-dim);border-radius:12px;margin-bottom:1rem;font-size:1.5rem}
+.problem-card h3{color:var(--white);margin-bottom:.5rem;font-size:1.15rem}
+.problem-card p{font-size:.9rem;color:var(--gray)}
+.problem-card .stat{font-size:1.5rem;font-weight:800;color:var(--cyan);margin:.5rem 0}
+
+/* ==================== SOLUTION ==================== */
+.solution{background:var(--navy-900)}
+.solution-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:768px){.solution-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.solution-grid{grid-template-columns:repeat(3,1fr)}}
+.solution-card{background:linear-gradient(180deg,var(--navy-800),var(--navy-700));border:1px solid rgba(212,160,23,.1);border-radius:var(--radius);padding:2rem;transition:all .3s var(--transition);position:relative;overflow:hidden}
+.solution-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--cyan));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--transition)}
+.solution-card:hover::before{transform:scaleX(1)}
+.solution-card:hover{border-color:rgba(212,160,23,.3);transform:translateY(-6px)}
+.solution-card .num{font-size:3rem;font-weight:800;color:rgba(212,160,23,.15);position:absolute;top:.5rem;right:1rem;line-height:1}
+.solution-card h3{color:var(--gold-light);margin-bottom:.8rem;font-size:1.1rem;position:relative;z-index:1}
+.solution-card p{font-size:.9rem;position:relative;z-index:1}
+
+/* ==================== GRADUATE PROFILE ==================== */
+.graduate{background:var(--navy-800);overflow:hidden}
+.graduate-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center}
+@media(min-width:900px){.graduate-grid{grid-template-columns:1fr 1.3fr}}
+.graduate-poster{border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5);border:1px solid rgba(212,160,23,.2)}
+.graduate-poster img{width:100%}
+.graduate-profiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.profile-item{background:var(--navy-700);border:1px solid rgba(212,160,23,.1);border-radius:var(--radius);padding:1.5rem;transition:all .3s var(--transition)}
+.profile-item:hover{border-color:var(--gold);transform:translateY(-4px)}
+.profile-item .icon{font-size:1.8rem;margin-bottom:.5rem}
+.profile-item h4{color:var(--gold-light);font-size:1rem;margin-bottom:.3rem}
+.profile-item p{font-size:.82rem;color:var(--gray);line-height:1.5}
+
+/* ==================== LEADERSHIP ==================== */
+.leadership{background:var(--navy-900)}
+.leadership-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:640px){.leadership-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.leadership-grid{grid-template-columns:repeat(3,1fr)}}
+.leader-card{background:linear-gradient(180deg,var(--navy-800),var(--navy-700));border:1px solid rgba(212,160,23,.1);border-radius:var(--radius);padding:2rem;text-align:center;transition:all .3s var(--transition);position:relative;overflow:hidden}
+.leader-card:hover{border-color:var(--gold);transform:translateY(-6px);box-shadow:0 15px 50px rgba(212,160,23,.1)}
+.leader-card .avatar{width:80px;height:80px;border-radius:50%;margin:0 auto 1rem;background:linear-gradient(135deg,var(--navy-600),var(--navy-700));border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.8rem;font-weight:800;color:var(--gold-light)}
+.leader-card .role-badge{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);background:var(--cyan-dim);padding:3px 10px;border-radius:20px;margin-bottom:.5rem}
+.leader-card h3{color:var(--white);font-size:1.1rem;margin-bottom:.3rem}
+.leader-card .title{font-size:.8rem;color:var(--gold);margin-bottom:.8rem}
+.leader-card .bio{font-size:.85rem;color:var(--gray);line-height:1.6}
+.leader-card.featured{grid-column:span 1}
+@media(min-width:640px){.leader-card.featured{grid-column:span 2}}
+@media(min-width:1000px){.leader-card.featured{grid-column:span 3}}
+.leader-card.featured .avatar{width:100px;height:100px;font-size:2.2rem}
+.leader-card.featured h3{font-size:1.3rem}
+.leader-card.featured .bio{font-size:.95rem;max-width:700px;margin:0 auto}
+
+/* ==================== ECOSYSTEM ==================== */
+.ecosystem{background:var(--navy-800)}
+.eco-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2rem}
+.eco-card{background:var(--navy-700);border:1px solid rgba(0,212,255,.1);border-radius:var(--radius);padding:1.8rem;transition:all .3s var(--transition)}
+.eco-card:hover{border-color:var(--cyan);transform:translateY(-4px)}
+.eco-card .eco-icon{font-size:2rem;margin-bottom:.8rem}
+.eco-card h3{color:var(--white);font-size:1.05rem;margin-bottom:.3rem}
+.eco-card .eco-sub{font-size:.75rem;color:var(--cyan);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.05em}
+.eco-card p{font-size:.85rem;color:var(--gray)}
+
+/* ==================== PARTNERS ==================== */
+.partners{background:var(--navy-900)}
+.partner-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:2rem}
+@media(min-width:768px){.partner-grid{grid-template-columns:1fr 1fr}}
+.partner-card{background:var(--navy-800);border:1px solid rgba(212,160,23,.15);border-radius:var(--radius);padding:2.5rem;transition:all .3s var(--transition)}
+.partner-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.partner-card .partner-badge{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:rgba(212,160,23,.1);padding:4px 12px;border-radius:20px;margin-bottom:1rem}
+.partner-card h3{color:var(--white);margin-bottom:.5rem}
+.partner-card .partner-tag{font-size:.85rem;color:var(--cyan);margin-bottom:1rem}
+.partner-card p{font-size:.9rem;margin-bottom:1rem}
+.partner-card ul{list-style:none;padding:0}
+.partner-card ul li{font-size:.88rem;color:var(--gray);padding:.4rem 0;padding-left:1.5rem;position:relative}
+.partner-card ul li::before{content:'▸';position:absolute;left:0;color:var(--gold)}
+
+/* ==================== ROADMAP ==================== */
+.roadmap{background:var(--navy-800)}
+.roadmap-timeline{position:relative;max-width:800px;margin:2rem auto 0;padding-left:2rem}
+.roadmap-timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--gold),var(--cyan))}
+.roadmap-item{position:relative;padding-bottom:2.5rem}
+.roadmap-item:last-child{padding-bottom:0}
+.roadmap-item::before{content:'';position:absolute;left:-2.4rem;top:.3rem;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--navy-800);box-shadow:0 0 10px var(--gold-glow)}
+.roadmap-item .year{font-size:1.3rem;font-weight:800;color:var(--gold-light);margin-bottom:.3rem}
+.roadmap-item h3{color:var(--white);font-size:1rem;margin-bottom:.3rem}
+.roadmap-item p{font-size:.88rem;color:var(--gray)}
+
+/* ==================== OFFER / CTA ==================== */
+.offer{background:linear-gradient(180deg,var(--navy-900),var(--navy-800));text-align:center;overflow:hidden}
+.offer-pattern{position:absolute;inset:0;opacity:.08;z-index:0}
+.offer-pattern img{width:100%;height:100%;object-fit:cover}
+.offer-content{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.offer-badge{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy-900);font-weight:800;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase;padding:.5rem 1.5rem;border-radius:30px;margin-bottom:1.5rem}
+.offer h2{margin-bottom:1rem}
+.offer h2 .gold-text{font-size:1.3em}
+.offer p{font-size:1.05rem;margin-bottom:2rem}
+.offer-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:2rem 0}
+.offer-feature{background:rgba(212,160,23,.08);border:1px solid rgba(212,160,23,.2);border-radius:var(--radius);padding:1.2rem;text-align:left}
+.offer-feature .check{color:var(--gold-light);font-weight:800;font-size:1.2rem;margin-bottom:.3rem}
+.offer-feature p{font-size:.85rem;color:var(--white);margin:0}
+.offer-form{background:var(--navy-700);border:1px solid rgba(212,160,23,.2);border-radius:var(--radius);padding:2rem;text-align:left;margin-top:2rem}
+.offer-form h3{color:var(--gold-light);margin-bottom:1rem;text-align:center}
+.form-row{display:grid;grid-template-columns:1fr;gap:1rem}
+@media(min-width:600px){.form-row{grid-template-columns:1fr 1fr}}
+.form-group{margin-bottom:1rem}
+.form-group label{display:block;font-size:.8rem;color:var(--gray);margin-bottom:.3rem;font-weight:600}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:.7rem .9rem;background:var(--navy-800);border:1px solid rgba(212,160,23,.15);border-radius:8px;color:var(--white);font-size:.9rem;font-family:inherit;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--gold)}
+.form-group textarea{resize:vertical;min-height:80px}
+.offer-form .btn{width:100%;justify-content:center;margin-top:.5rem}
+.form-note{font-size:.75rem;color:var(--gray-dim);text-align:center;margin-top:1rem}
+
+/* ==================== FOOTER ==================== */
+.footer{background:var(--navy-900);padding:3rem 0 2rem;border-top:1px solid rgba(212,160,23,.1)}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2rem}
+@media(min-width:768px){.footer-grid{grid-template-columns:2fr 1fr 1fr}}
+.footer-brand{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.footer-brand img{width:40px;height:40px}
+.footer-brand span{font-weight:700;font-size:1.3rem;color:var(--gold-light)}
+.footer-brand .tagline{font-size:.7rem;color:var(--gray);display:block;letter-spacing:.1em}
+.footer p{font-size:.85rem;margin-bottom:1rem}
+.footer h4{color:var(--white);font-size:.9rem;margin-bottom:.8rem}
+.footer-links{list-style:none;padding:0}
+.footer-links li{margin-bottom:.5rem}
+.footer-links a{font-size:.85rem;color:var(--gray);transition:color .2s}
+.footer-links a:hover{color:var(--gold-light)}
+.footer-bottom{text-align:center;padding-top:2rem;border-top:1px solid rgba(212,160,23,.1)}
+.footer-bottom p{font-size:.8rem;color:var(--gray-dim)}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .7s var(--transition),transform .7s var(--transition)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}*{animation-duration:.01ms!important}}
+
+/* ==================== TOAST ==================== */
+.toast{position:fixed;bottom:2rem;right:2rem;z-index:2000;background:var(--navy-700);border:1px solid var(--gold);border-radius:var(--radius);padding:1rem 1.5rem;color:var(--white);font-size:.9rem;box-shadow:0 10px 40px rgba(0,0,0,.4);transform:translateX(400px);transition:transform .4s var(--transition);max-width:350px}
+.toast.show{transform:translateX(0)}
+.toast .toast-title{color:var(--gold-light);font-weight:700;margin-bottom:.2rem}
+</style>
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="assets/vintech-logo.png" alt="Mentora" onerror="this.style.display='none'">
+      <span>Mentora</span>
+    </a>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">Giới thiệu</a>
+      <a href="#problem">Bối cảnh</a>
+      <a href="#solution">Giải pháp</a>
+      <a href="#graduate">Học viên</a>
+      <a href="#leadership">Lãnh đạo</a>
+      <a href="#ecosystem">Hệ sinh thái</a>
+      <a href="#offer" class="nav-cta">Đăng ký ngay</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-bg.jpg" alt="Mentora Campus">
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="pulse"></span>
+      Ưu đãi độc quyền tháng 7/2026 — Dành riêng cho cán bộ Vingroup
+    </div>
+    <h1>
+      Kiến tạo tương lai cùng<br>
+      <span class="highlight">Mentora University</span>
+    </h1>
+    <p class="hero-subtitle">
+      Đại học tư thục số 1 Đông Nam Á về đào tạo lãnh đạo &amp; nhân lực thực chiến trong khoa học — công nghệ ứng dụng đa ngành. Định vị mới, cơ hội mới — dành riêng cho cộng đồng Vingroup.
+    </p>
+    <div class="hero-discount">
+      <div class="percent">50%</div>
+      <div class="label">Giảm học phí — Tháng 7/2026</div>
+    </div>
+    <div class="hero-cta-group">
+      <a href="#offer" class="btn btn-primary">Đăng ký nhận ưu đãi →</a>
+      <a href="#about" class="btn btn-outline">Tìm hiểu thêm</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    Cuộn xuống
+    <span class="arrow"></span>
+  </div>
+</section>
+
+<!-- ==================== COUNTDOWN ==================== -->
+<section class="countdown-section">
+  <div class="container countdown-inner">
+    <div class="countdown-label">Ưu đãi kết thúc trong</div>
+    <div class="countdown-timer" id="countdown">
+      <div class="countdown-item"><div class="num" id="cd-days">--</div><div class="unit">Ngày</div></div>
+      <div class="countdown-item"><div class="num" id="cd-hours">--</div><div class="unit">Giờ</div></div>
+      <div class="countdown-item"><div class="num" id="cd-mins">--</div><div class="unit">Phút</div></div>
+      <div class="countdown-item"><div class="num" id="cd-secs">--</div><div class="unit">Giây</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="section-tag">Giới thiệu</span>
+        <h2>Mentora University — <span class="gold-text">Nơi kiến tạo lãnh đạo AI-Native</span></h2>
+        <p>Mentora University định vị trở thành đại học tư thục số 1 Đông Nam Á về đào tạo lãnh đạo và nhân lực thực chiến trong khoa học — công nghệ ứng dụng đa ngành. Mục tiêu năm 2035: top 200 Global Employability University Ranking, với hơn 70% alumni là founder hoặc CEO.</p>
+        <p>Khác biệt cốt lõi nằm ở mô hình <strong style="color:var(--gold-light)">Mentor-as-Faculty (MAF)</strong> — 50% giảng viên là lãnh đạo thực chiến từ Vingroup và đối tác, mang bài toán thật từ doanh nghiệp vào lớp học. Mỗi sinh viên tốt nghiệp có đủ năng lực vận hành One Person Company (OPC) — từ chiến lược đến thực thi.</p>
+        <div class="about-stats">
+          <div class="stat-card"><div class="num">15.000</div><div class="label">Sinh viên mục tiêu 2033</div></div>
+          <div class="stat-card"><div class="num">37ha</div><div class="label">Diện tích campus</div></div>
+          <div class="stat-card"><div class="num">3.000 tỷ</div><div class="label">VNĐ đầu tư ban đầu</div></div>
+          <div class="stat-card"><div class="num">70%+</div><div class="label">Alumni là founder/CEO</div></div>
+        </div>
+      </div>
+      <div class="about-image reveal">
+        <img src="assets/campus.jpg" alt="Mentora Campus — Kiến trúc tương lai">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROBLEM ==================== -->
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto">
+      <span class="section-tag">Bối cảnh</span>
+      <h2 class="section-title">Thừa thợ thực hành, <span class="cyan-text">khát lãnh đạo AI</span></h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Thế giới đang bước vào kỷ nguyên mới — nơi AI thay thế công việc lặp lại, nhưng khủng hoảng thiếu người biết cấu trúc bài toán và phán đoán kết quả. Đây là cửa sổ cơ hội chưa từng có.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <div class="icon">🌍</div>
+        <h3>Bối cảnh toàn cầu</h3>
+        <div class="stat">300 triệu</div>
+        <p>Việc làm toàn thời gian bị GenAI tự động hóa (Goldman Sachs). WEF dự báo 83 triệu việc mất, 69 triệu việc mới đòi hỏi tư duy phân tích và lãnh đạo.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="icon">🇻🇳</div>
+        <h3>Cơ hội tại Việt Nam</h3>
+        <div class="stat">10.000 CEO</div>
+        <p>NQ 57-NQ/TW đặt KHCN &amp; chuyển đổi số là đột phá hàng đầu. NQ 68 khởi động chương trình 10.000 CEO. Luật AI, Luật CĐS lần đầu tạo hành lang pháp lý đầy đủ.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="icon">🏢</div>
+        <h3>Vingroup Go Global</h3>
+        <div class="stat">50+ thị trường</div>
+        <p>VinFast mở rộng ra 50+ quốc gia, cần Local Leaders AI-Native. VinAI sở hữu PhoGPT nhưng thiếu Product CEO. Vinhomes cần Giám đốc Smart City AI-Native.</p>
+      </div>
+      <div class="problem-card reveal">
+        <div class="icon">🔐</div>
+        <h3>An ninh mạng</h3>
+        <div class="stat">700.000+</div>
+        <p>Việt Nam thiếu hơn 700.000 chuyên gia an toàn thông tin. 552.000 cuộc tấn công mạng năm 2025. QĐ 21/2026 xác định ATTT là công nghệ chiến lược quốc gia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SOLUTION ==================== -->
+<section class="solution" id="solution">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto">
+      <span class="section-tag">Giải pháp</span>
+      <h2 class="section-title">Mô hình giáo dục <span class="gold-text">đột phá & khác biệt</span></h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Mentora thiết kế hệ sinh thái đào tạo không giống bất kỳ đại học nào tại ASEAN — nơi mỗi cấu phần chương trình đều ánh xạ trực tiếp vào tiêu chí xếp hạng quốc tế có thể đo lường.</p>
+    </div>
+    <div class="solution-grid">
+      <div class="solution-card reveal">
+        <div class="num">01</div>
+        <h3>Mentor-as-Faculty (MAF)</h3>
+        <p>50% giảng viên là CEO/CTO/CFO thực chiến từ Vingroup và đối tác. Hệ thống mentor 1:5 — mỗi lãnh đạo kèm cặp 5 sinh viên trong 3 năm liên tục, chuyển giao tri thức ngầm mà sách vở và AI không dạy được.</p>
+      </div>
+      <div class="solution-card reveal">
+        <div class="num">02</div>
+        <h3>50% Thực hành — Product Driven</h3>
+        <p>Giải case study thật từ Vingroup, nơi AI đưa ra output nhưng con người phán đoán rủi ro, đạo đức, chính trị. Capstone project trình bày trước hội đồng gồm lãnh đạo doanh nghiệp và chính quyền.</p>
+      </div>
+      <div class="solution-card reveal">
+        <div class="num">03</div>
+        <h3>One Person Company (OPC)</h3>
+        <p>Mỗi sinh viên tốt nghiệp có đủ năng lực vận hành một doanh nghiệp một người — từ chiến lược đến thực thi. AI làm thay chân tay, con người ra quyết định bằng phán đoán.</p>
+      </div>
+      <div class="solution-card reveal">
+        <div class="num">04</div>
+        <h3>AI-Native Leader</h3>
+        <p>Thế hệ đầu tiên được đào tạo từ ngày 1 với AI như công cụ, không phải mối đe dọa. Biết dùng AI, biết khi nào không tin AI, và biết phán đoán kết quả AI để ra quyết định kinh doanh.</p>
+      </div>
+      <div class="solution-card reveal">
+        <div class="num">05</div>
+        <h3>Co-brand với ASU</h3>
+        <p>Đồng thiết kế chương trình đào tạo với Arizona State University — #1 đại học sáng tạo nhất nước Mỹ 11 năm liên tiếp. Chất lượng xác thực bởi ASU, chuyển giao công nghệ và MOOCs.</p>
+      </div>
+      <div class="solution-card reveal">
+        <div class="num">06</div>
+        <h3>Tham gia WACE</h3>
+        <p>Hiệp hội quốc tế duy nhất chuyên sâu về Co-operative &amp; Work-Integrated Education. Tiêu chuẩn quốc tế để thiết kế, vận hành và truyền thông mô hình học tập gắn với kinh nghiệm thực tế.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GRADUATE PROFILE ==================== -->
+<section class="graduate" id="graduate">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto 3rem">
+      <span class="section-tag">Học viên đầu ra</span>
+      <h2 class="section-title">6 trụ cột năng lực <span class="gold-text">Mentora Graduate</span></h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Người trẻ có đầu óc doanh nhân, giỏi AI, lấy con người làm trung tâm, bền bỉ, biết thực thi, sẵn sàng đi vào thị trường và thế giới.</p>
+    </div>
+    <div class="graduate-grid">
+      <div class="graduate-poster reveal">
+        <img src="assets/poster.png" alt="Mentora Graduate Profile">
+      </div>
+      <div class="graduate-profiles reveal">
+        <div class="profile-item">
+          <div class="icon">🧠</div>
+          <h4>Đầu — Trí tuệ</h4>
+          <p>Tư duy khởi nghiệp, thành thạo AI, lấy con người làm trung tâm, giải quyết vấn đề thật.</p>
+        </div>
+        <div class="profile-item">
+          <div class="icon">🛡️</div>
+          <h4>Tim — Bản lĩnh</h4>
+          <p>Resilient — kiên cường, bền bỉ. Dám thử, dám sai, dám đứng dậy. Không gục trước biến động.</p>
+        </div>
+        <div class="profile-item">
+          <div class="icon">⚙️</div>
+          <h4>Tay — Thực thi</h4>
+          <p>Kỷ luật vận hành, biến ý tưởng thành sản phẩm thật. AI làm thay chân tay, con người phán đoán.</p>
+        </div>
+        <div class="profile-item">
+          <div class="icon">🏃</div>
+          <h4>Chân — Tốc độ</h4>
+          <p>Linh hoạt, thích ứng đa văn hóa, sẵn sàng ở mọi thị trường Vingroup mở ra (Go Global Track).</p>
+        </div>
+        <div class="profile-item">
+          <div class="icon">🌿</div>
+          <h4>Khiên — ESG</h4>
+          <p>Phát triển bền vững, đạo đức khi dùng AI, trách nhiệm xã hội. Giỏi nhưng không vô cảm.</p>
+        </div>
+        <div class="profile-item">
+          <div class="icon">⚔️</div>
+          <h4>Kiếm — AI</h4>
+          <p>Vũ khí sắc bén nằm trong tay người cầm. Sinh viên ra quyết định cuối cùng, AI đưa output để phản biện.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LEADERSHIP ==================== -->
+<section class="leadership" id="leadership">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto">
+      <span class="section-tag">Ban lãnh đạo</span>
+      <h2 class="section-title">Executive Leadership — <span class="gold-text">Đội ngũ tinh hoa</span></h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Những nhà lãnh đạo kiến tạo tương lai, mang tầm nhìn chiến lược và kinh nghiệm thực chiến đến Mentora University.</p>
+    </div>
+    <div class="leadership-grid">
+      <!-- Featured Leader -->
+      <div class="leader-card featured reveal">
+        <div class="avatar">HMD</div>
+        <div class="role-badge">Finance Leadership</div>
+        <h3>Hoang Manh Duc</h3>
+        <div class="title">Strategic Financial Architect</div>
+        <p class="bio">Kiến trúc sư tài chính chiến lược thúc đẩy xuất sắc tổ chức. Cung cấp giám sát tài chính toàn diện, hiệu quả vận hành và chiến lược tăng trưởng bền vững tạo giá trị đo lường được cho các bên liên quan. Năng lực cốt lõi: hoạch định tài chính chiến lược, tối ưu hóa vận hành, quản trị rủi ro và tạo giá trị cho bên liên quan trong các môi trường kinh doanh phức tạp.</p>
+      </div>
+      <!-- CEO -->
+      <div class="leader-card reveal">
+        <div class="avatar">NMP</div>
+        <div class="role-badge">CEO</div>
+        <h3>Nguyen Minh Phuong</h3>
+        <div class="title">Chief Executive Officer</div>
+        <p class="bio">Doanh nhân tầm nhìn xây dựng hệ sinh thái đổi mới thịnh vượng. Biến cơ hội thị trường thành dự án khả mở rộng qua hợp tác chiến lược với các tổ chức toàn cầu. Trao quyền cho doanh nghiệp mới đạt tăng trưởng bền vững.</p>
+      </div>
+      <!-- CAIO -->
+      <div class="leader-card reveal">
+        <div class="avatar">NHT</div>
+        <div class="role-badge">CAIO</div>
+        <h3>Nguyen Ha Thanh</h3>
+        <div class="title">Chief AI Officer</div>
+        <p class="bio">Tiên phong đổi mới AI ứng dụng trí tuệ neuro-symbolic và mô hình ngôn ngữ lớn giải quyết thách thức thể chế phức tạp. Cung cấp giải pháp AI tiên tiến tăng cường hệ thống ra quyết định và tạo lợi thế cạnh tranh.</p>
+      </div>
+      <!-- CFO -->
+      <div class="leader-card reveal">
+        <div class="avatar">HHH</div>
+        <div class="role-badge">CFO</div>
+        <h3>Ho Hong Hai</h3>
+        <div class="title">Chief Financial Officer</div>
+        <p class="bio">Lãnh đạo xuất sắc tài chính với 17 năm kinh nghiệm giảng dạy và tư vấn quốc tế. Xây dựng khung tài chính vững chắc, tối ưu phân bổ vốn và thúc đẩy tạo giá trị kinh tế qua phân tích dữ liệu.</p>
+      </div>
+      <!-- COO -->
+      <div class="leader-card reveal">
+        <div class="avatar">NTT</div>
+        <div class="role-badge">COO</div>
+        <h3>Nguyen Thanh Trung</h3>
+        <div class="title">Chief Operating Officer</div>
+        <p class="bio">Chuyên gia chiến lược vận hành bền vững thúc đẩy chuyển đổi xanh và đổi mới thông minh. Tối ưu quy trình vận hành đồng thời thúc đẩy trách nhiệm môi trường, tạo giá trị qua thực hành kinh doanh bền vững.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ECOSYSTEM ==================== -->
+<section class="ecosystem" id="ecosystem">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto">
+      <span class="section-tag">Hệ sinh thái Vingroup</span>
+      <h2 class="section-title">Mảnh ghép trong <span class="cyan-text">hệ sinh thái Vin</span></h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Mentora giải quyết nhu cầu nhân lực cấp cao chuẩn AI cho toàn bộ hệ sinh thái Vingroup — từ sản xuất, công nghệ, bất động sản đến y tế và giáo dục.</p>
+    </div>
+    <div class="eco-grid">
+      <div class="eco-card reveal">
+        <div class="eco-icon">🚗</div>
+        <h3>VinFast — VinEnergo</h3>
+        <div class="eco-sub">Sản xuất &amp; Thương mại</div>
+        <p>50+ thị trường toàn cầu. Cần Local Leaders AI-Native vận hành showroom và xưởng dịch vụ quốc tế bằng mô hình One Person Company.</p>
+      </div>
+      <div class="eco-card reveal">
+        <div class="eco-icon">🤖</div>
+        <h3>VinAI — VinBigData</h3>
+        <div class="eco-sub">Công nghệ lõi</div>
+        <p>Sở hữu PhoGPT, ViVi, DrAid. Thiếu Product CEO thương mại hóa LLM — biến công nghệ thành sản phẩm bán được B2B và B2C.</p>
+      </div>
+      <div class="eco-card reveal">
+        <div class="eco-icon">🏙️</div>
+        <h3>Vinhomes — Vinpearl</h3>
+        <div class="eco-sub">Bất động sản &amp; Du lịch</div>
+        <p>Hàng chục đại đô thị và ngàn phòng khách sạn. Cần Giám đốc Smart City/Hospitality AI-Native tiết kiệm 20-30% chi phí vận hành.</p>
+      </div>
+      <div class="eco-card reveal">
+        <div class="eco-icon">🏥</div>
+        <h3>Vinmec — Vinschool — VinUni</h3>
+        <div class="eco-sub">Y tế &amp; Giáo dục</div>
+        <p>Ứng dụng DrAid trong chẩn đoán hình ảnh. Đào tạo Smart Healthcare/Education Leaders tích hợp AI, giảm tải bác sĩ và tăng độ chính xác.</p>
+      </div>
+      <div class="eco-card reveal">
+        <div class="eco-icon">🔒</div>
+        <h3>An ninh mạng</h3>
+        <div class="eco-sub">An toàn thông tin</div>
+        <p>Việt Nam thiếu 700.000 chuyên gia ATTT. QĐ 21/2026 xác định là công nghệ chiến lược quốc gia. Mentora đào tạo chuyên gia bảo mật AI-Native.</p>
+      </div>
+      <div class="eco-card reveal">
+        <div class="eco-icon">🌐</div>
+        <h3>SMEs Hub — Incubator — VGR</h3>
+        <div class="eco-sub">Hệ sinh thái kiềng 3 chân</div>
+        <p>Hỗ trợ sinh viên khởi nghiệp, ươm tạo dự án và kết nối hệ sinh thái Vingroup. Đảm bảo đầu ra: Vingroup P&amp;L + Đối tác + Startup + OPC.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PARTNERS ==================== -->
+<section class="partners" id="partners">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto">
+      <span class="section-tag">Đối tác chiến lược</span>
+      <h2 class="section-title">Hiệp hội &amp; <span class="gold-text">đối tác quốc tế</span></h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Mentora hợp tác với các tổ chức giáo dục hàng đầu thế giới để đảm bảo chuẩn quốc tế cho mọi chương trình đào tạo.</p>
+    </div>
+    <div class="partner-grid">
+      <div class="partner-card reveal">
+        <div class="partner-badge">Co-brand Partner</div>
+        <h3>Arizona State University (ASU)</h3>
+        <div class="partner-tag">#1 Đại học sáng tạo nhất nước Mỹ — 11 năm liên tiếp</div>
+        <p>ASU là nguyên mẫu của "New American University", vận hành một trong những chương trình đại học online lớn nhất Mỹ với 107.000 sinh viên online. Năm 2025, ASU được THE Impact Rankings xếp #1 tại Mỹ về đóng góp cho mục tiêu phát triển bền vững của Liên Hợp Quốc.</p>
+        <ul>
+          <li>Đồng thiết kế chương trình đào tạo, chất lượng xác thực bởi ASU</li>
+          <li>Đào tạo giảng viên thực chiến và chuyển giao công nghệ MOOCs</li>
+          <li>Cooperate Innovation Labs (VinLab, Samsung Lab) ngay trong campus</li>
+          <li>Cơ hội thực tập và việc làm quốc tế</li>
+        </ul>
+      </div>
+      <div class="partner-card reveal">
+        <div class="partner-badge">International Association</div>
+        <h3>WACE — World Association for Co-operative &amp; Work-Integrated Education</h3>
+        <div class="partner-tag">Tổ chức quốc tế duy nhất chuyên sâu về Work-Integrated Education</div>
+        <p>Thành lập năm 1983 bởi lãnh đạo đại học, chuyên gia giáo dục và nhà tuyển dụng từ Úc, Canada, Hồng Kông, Hà Lan, Philippines, Mỹ và Anh. Hiện có hơn 4.000 WIL colleagues toàn cầu với mạng lưới kết nối đại học, nhà tuyển dụng và cơ quan công quyền.</p>
+        <ul>
+          <li>Tiêu chuẩn quốc tế cho Work-Integrated Learning</li>
+          <li>Thiết kế, vận hành và truyền thông mô hình co-op</li>
+          <li>Mạng lưới 4.000+ chuyên gia WIL toàn cầu</li>
+          <li>Logo nên có sớm trong giai đoạn go-to-market</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ROADMAP ==================== -->
+<section class="roadmap" id="roadmap">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto">
+      <span class="section-tag">Lộ trình</span>
+      <h2 class="section-title">Hành trình <span class="gold-text">2031 — 2035</span></h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Lộ trình chiến lược tham gia các bảng xếp hạng quốc tế, đưa Mentora trở thành đại học tư thục số 1 Đông Nam Á.</p>
+    </div>
+    <div class="roadmap-timeline">
+      <div class="roadmap-item reveal">
+        <div class="year">2026</div>
+        <h3>Khởi động — Tuyển sinh đầu tiên</h3>
+        <p>Tuyển 1.000 — 4.000 sinh viên/năm. Thành lập chính sách hệ sinh thái kiềng 3 chân: SMEs Hub, Incubator Hub, VGR Ecosystem. Ưu đãi 50% cho cán bộ Vingroup.</p>
+      </div>
+      <div class="roadmap-item reveal">
+        <div class="year">2031 — 2032</div>
+        <h3>Thu thập dữ liệu xếp hạng</h3>
+        <p>Chuẩn bị hồ sơ cho AppliedHE Private University ASEAN và Global Employability University Ranking.</p>
+      </div>
+      <div class="roadmap-item reveal">
+        <div class="year">2033</div>
+        <h3>Top 1 Việt Nam — Top 20 ASEAN</h3>
+        <p>Đạt top 1 Việt Nam và top 20 ASEAN trong bảng AppliedHE dành cho đại học tư nhân. Top 300 global employability. Quy mô 15.000 sinh viên.</p>
+      </div>
+      <div class="roadmap-item reveal">
+        <div class="year">2035</div>
+        <h3>Top 1 ASEAN — Top 200 Global</h3>
+        <p>Top 1 ASEAN AppliedHE Private University. Top 200 Global Employability Ranking. 70%+ alumni là founder/CEO.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== OFFER / CTA ==================== -->
+<section class="offer" id="offer">
+  <div class="offer-pattern">
+    <img src="assets/ai-pattern.jpg" alt="">
+  </div>
+  <div class="container">
+    <div class="offer-content reveal">
+      <div class="offer-badge">⚡ Ưu đãi độc quyền — Tháng 7/2026</div>
+      <h2>Giảm <span class="gold-text">50%</span> học phí<br>dành cho cán bộ Vingroup</h2>
+      <p>Chương trình ưu đãi đặc biệt dành riêng cho cán bộ, nhân viên Vingroup đăng ký nhập học tại Mentora University trong tháng 7/2026. Cơ hội trở thành thế hệ lãnh đạo AI-Native đầu tiên — với chi phí chỉ bằng một nửa.</p>
+      <div class="offer-features">
+        <div class="offer-feature">
+          <div class="check">✓</div>
+          <p>Giảm 50% học phí toàn khóa học</p>
+        </div>
+        <div class="offer-feature">
+          <div class="check">✓</div>
+          <p>Ưu tiên nhập học và chọn ngành</p>
+        </div>
+        <div class="offer-feature">
+          <div class="check">✓</div>
+          <p>Hỗ trợ nhà ở và ký túc xá</p>
+        </div>
+        <div class="offer-feature">
+          <div class="check">✓</div>
+          <p>Cam kết đầu ra — Vingroup P&amp;L + Đối tác</p>
+        </div>
+      </div>
+      <form class="offer-form" id="registerForm">
+        <h3>Đăng ký nhận ưu đãi</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">Họ và tên *</label>
+            <input type="text" id="f-name" required placeholder="Nguyễn Văn A">
+          </div>
+          <div class="form-group">
+            <label for="f-phone">Số điện thoại *</label>
+            <input type="tel" id="f-phone" required placeholder="09xx xxx xxx">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-email">Email *</label>
+            <input type="email" id="f-email" required placeholder="email@vingroup.net">
+          </div>
+          <div class="form-group">
+            <label for="f-unit">Đơn vị công tác *</label>
+            <select id="f-unit" required>
+              <option value="">-- Chọn đơn vị --</option>
+              <option>VinFast</option>
+              <option>VinAI</option>
+              <option>VinBigData</option>
+              <option>VinBrain</option>
+              <option>Vinhomes</option>
+              <option>Vinpearl</option>
+              <option>Vinmec</option>
+              <option>Vinschool</option>
+              <option>VinUni</option>
+              <option>VinEnergo</option>
+              <option>HMS</option>
+              <option>Khác</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-major">Ngành học quan tâm</label>
+          <select id="f-major">
+            <option value="">-- Chọn ngành --</option>
+            <option>Công nghệ thông tin &amp; AI</option>
+            <option>An toàn thông tin</option>
+            <option>Quản trị kinh doanh</option>
+            <option>Tài chính — Kế toán</option>
+            <option>Kỹ thuật điện — Năng lượng</option>
+            <option>Quản lý vận hành thông minh</option>
+            <option>Khác</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-note">Ghi chú</label>
+          <textarea id="f-note" placeholder="Nội dung bạn muốn trao đổi thêm..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Gửi đăng ký — Nhận ưu đãi 50% →</button>
+        <p class="form-note">Bằng việc đăng ký, bạn đồng ý được Mentora University liên hệ tư vấn. Thông tin của bạn được bảo mật tuyệt đối.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/vintech-logo.png" alt="Mentora" onerror="this.style.display='none'">
+          <div>
+            <span>Mentora</span>
+            <span class="tagline">TECHNOLOGY — INNOVATION — HUMANITY</span>
+          </div>
+        </div>
+        <p>Đại học tư thục số 1 Đông Nam Á về đào tạo lãnh đạo &amp; nhân lực thực chiến trong khoa học — công nghệ ứng dụng đa ngành. Tạo giá trị thật — dẫn dắt tương lai.</p>
+        <p style="color:var(--gold-light);font-weight:600;font-size:.9rem;letter-spacing:.05em">TRÍ TUỆ — BẢN LĨNH — THỰC THI — TỐC ĐỘ — ESG — AI</p>
+      </div>
+      <div>
+        <h4>Liên kết</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#problem">Bối cảnh</a></li>
+          <li><a href="#solution">Giải pháp</a></li>
+          <li><a href="#graduate">Học viên đầu ra</a></li>
+          <li><a href="#leadership">Ban lãnh đạo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Thông tin</h4>
+        <ul class="footer-links">
+          <li><a href="#ecosystem">Hệ sinh thái</a></li>
+          <li><a href="#partners">Đối tác</a></li>
+          <li><a href="#roadmap">Lộ trình</a></li>
+          <li><a href="#offer">Ưu đãi 50%</a></li>
+          <li><a href="#offer">Đăng ký</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mentora University. Ưu đãi giảm 50% học phí dành cho cán bộ Vingroup — Tháng 7/2026.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== TOAST ==================== -->
+<div class="toast" id="toast">
+  <div class="toast-title">✓ Đăng ký thành công!</div>
+  <div id="toastMsg">Cảm ơn bạn đã đăng ký. Đội ngũ Mentora sẽ liên hệ trong thời gian sớm nhất.</div>
+</div>
+
+<script>
+// ==================== NAVBAR SCROLL ====================
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById
+('navLinks').classList.remove('open');
+  });
+});
+
+// ==================== COUNTDOWN ====================
+// Target: end of July 2026
+const target = new Date('2026-07-31T23:59:59+07:00').getTime();
+function updateCountdown() {
+  const now = Date.now();
+  const diff = target - now;
+  if (diff <= 0) {
+    ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id => document.getElementById(id).textContent = '0');
+    return;
+  }
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  const mins = Math.floor((diff % 3600000) / 60000);
+  const secs = Math.floor((diff % 60000) / 1000);
+  document.getElementById('cd-days').textContent = days;
+  document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+  document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+  document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+// ==================== SCROLL REVEAL ====================
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ==================== FORM SUBMIT ====================
+const form = document.getElementById('registerForm');
+const toast = document.getElementById('toast');
+const toastMsg = document.getElementById('toastMsg');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('f-name').value.trim();
+  if (!name) return;
+  toastMsg.textContent = 'Cảm ơn ' + name + '! Đội ngũ Mentora sẽ liên hệ trong thời gian sớm nhất.';
+  toast.classList.add('show');
+  form.reset();
+  setTimeout(() => toast.classList.remove('show'), 5000);
+});
+
+// ==================== SMOOTH SCROLL OFFSET ====================
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const id = a.getAttribute('href');
+    if (id.length > 1) {
+      const el = document.querySelector(id);
+      if (el) {
+        e.preventDefault();
+        const offset = 70;
+        const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
