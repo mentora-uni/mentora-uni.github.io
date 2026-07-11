@@ -3,8 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mentora University — Ưu Đãi 50% Dành Cho Cán Bộ Vingroup | Tháng 7/2026</title>
-<meta name="description" content="Chương trình ưu đãi giảm 50% học phí dành riêng cho cán bộ Vingroup tháng 7/2026. Mentora University — Đại học tư thục #1 Đông Nam Á về đào tạo lãnh đạo & nhân lực thực chiến.">
+<title>Mentora University — Ưu Đãi 50% Học Phí</title>
+<meta name="description" content="Đăng ký trước ngày 8/8/2026 — Giảm 50% học phí dành cho cán bộ Vingroup. Mentora University — Đại học tư thục #1 Đông Nam Á về đào tạo lãnh đạo & nhân lực thực chiến.">
+<meta property="og:title" content="Mentora University — Ưu Đãi 50% Học Phí">
+<meta property="og:description" content="Đăng ký trước ngày 8/8/2026 — Giảm 50% học phí dành cho cán bộ Vingroup. Mentora University — Đại học tư thục #1 Đông Nam Á về đào tạo lãnh đạo & nhân lực thực chiến.">
+<meta property="og:image" content="assets/arch-1.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mentora University — Ưu Đãi 50% Học Phí">
+<meta name="twitter:description" content="Đăng ký trước ngày 8/8/2026 — Giảm 50% học phí dành cho cán bộ Vingroup.">
+<meta name="twitter:image" content="assets/arch-1.png">
 <style>
 /* ==================== RESET & BASE ==================== */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -163,6 +172,20 @@ section{padding:5rem 0}
 @media(min-width:640px){.leader-card.featured{grid-column:span 2}}
 @media(min-width:1000px){.leader-card.featured{grid-column:span 3}}
 .leader-card.featured .avatar{width:100px;height:100px;font-size:2.2rem}
+.leader-card .avatar-img{width:80px;height:80px;border-radius:50%;margin:0 auto 1rem;border:3px solid var(--gold);object-fit:cover;box-shadow:0 4px 20px rgba(0,0,0,.3)}
+.leader-card.featured .avatar-img{width:120px;height:120px}
+.leader-card .avatar-img:hover{border-color:var(--gold-light);transform:scale(1.05);transition:all .3s var(--transition)}
+
+/* ==================== CAMPUS GALLERY ==================== */
+.campus-gallery{background:var(--navy-900)}
+.gallery-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem}
+@media(min-width:768px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-item{border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.4);border:1px solid rgba(212,160,23,.15);transition:all .3s var(--transition);position:relative}
+.gallery-item:hover{border-color:var(--gold);transform:translateY(-6px);box-shadow:0 15px 50px rgba(212,160,23,.15)}
+.gallery-item img{width:100%;height:280px;object-fit:cover;transition:transform .5s var(--transition)}
+.gallery-item:hover img{transform:scale(1.08)}
+.gallery-item .gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(180deg,transparent,rgba(10,22,40,.9));padding:2rem 1.2rem 1rem;color:var(--white);font-size:.85rem;font-weight:600}
+.gallery-item .gallery-caption span{color:var(--gold-light);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:.2rem}
 .leader-card.featured h3{font-size:1.3rem}
 .leader-card.featured .bio{font-size:.95rem;max-width:700px;margin:0 auto}
 
@@ -274,6 +297,7 @@ section{padding:5rem 0}
       <a href="#solution">Giải pháp</a>
       <a href="#graduate">Học viên</a>
       <a href="#leadership">Lãnh đạo</a>
+      <a href="#campus">Campus</a>
       <a href="#ecosystem">Hệ sinh thái</a>
       <a href="#offer" class="nav-cta">Đăng ký ngay</a>
     </div>
@@ -283,12 +307,12 @@ section{padding:5rem 0}
 <!-- ==================== HERO ==================== -->
 <section class="hero" id="hero">
   <div class="hero-bg">
-    <img src="assets/hero-bg.jpg" alt="Mentora Campus">
+    <img src="assets/arch-1.png" alt="Mentora Campus — Kiến trúc tương lai">
   </div>
   <div class="hero-content">
     <div class="hero-badge">
       <span class="pulse"></span>
-      Ưu đãi độc quyền tháng 7/2026 — Dành riêng cho cán bộ Vingroup
+      Ưu đãi độc quyền — Đăng ký trước ngày 8/8/2026
     </div>
     <h1>
       Kiến tạo tương lai cùng<br>
@@ -299,7 +323,7 @@ section{padding:5rem 0}
     </p>
     <div class="hero-discount">
       <div class="percent">50%</div>
-      <div class="label">Giảm học phí — Tháng 7/2026</div>
+      <div class="label">Giảm học phí — Đăng ký trước 8/8/2026</div>
     </div>
     <div class="hero-cta-group">
       <a href="#offer" class="btn btn-primary">Đăng ký nhận ưu đãi →</a>
@@ -315,7 +339,7 @@ section{padding:5rem 0}
 <!-- ==================== COUNTDOWN ==================== -->
 <section class="countdown-section">
   <div class="container countdown-inner">
-    <div class="countdown-label">Ưu đãi kết thúc trong</div>
+    <div class="countdown-label">Hạn chót đăng ký nhận ưu đãi</div>
     <div class="countdown-timer" id="countdown">
       <div class="countdown-item"><div class="num" id="cd-days">--</div><div class="unit">Ngày</div></div>
       <div class="countdown-item"><div class="num" id="cd-hours">--</div><div class="unit">Giờ</div></div>
@@ -342,7 +366,7 @@ section{padding:5rem 0}
         </div>
       </div>
       <div class="about-image reveal">
-        <img src="assets/campus.jpg" alt="Mentora Campus — Kiến trúc tương lai">
+        <img src="assets/arch-2.png" alt="Mentora Campus — Kiến trúc xanh">
       </div>
     </div>
   </div>
@@ -484,43 +508,47 @@ section{padding:5rem 0}
       <h2 class="section-title">Executive Leadership — <span class="gold-text">Đội ngũ tinh hoa</span></h2>
       <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Những nhà lãnh đạo kiến tạo tương lai, mang tầm nhìn chiến lược và kinh nghiệm thực chiến đến Mentora University.</p>
     </div>
+    <!-- Provost — Hiring -->
+    <div class="leader-card provost-hiring reveal" style="grid-column:1/-1;margin-bottom:1.5rem">
+      <div class="avatar" style="background:linear-gradient(135deg,var(--navy-600),var(--navy-700));border:2px dashed var(--gold);font-size:1.4rem">🔍</div>
+      <div class="role-badge" style="color:var(--gold);background:rgba(212,160,23,.12)">We are hiring!</div>
+      <h3>Provost</h3>
+      <div class="title">Giám đốc học vụ</div>
+      <p class="bio" style="max-width:600px;margin:0 auto">Chúng tôi đang tìm kiếm nhà lãnh đạo học thuật tầm cỡ để định hướng và phát triển chiến lược giáo dục của Mentora University. Vị trí cấp cao nhất về học thuật, chịu trách nhiệm xây dựng và thực thi tầm nhìn giáo dục.</p>
+    </div>
+    <!-- 5 Leaders -->
     <div class="leadership-grid">
-      <!-- Featured Leader -->
-      <div class="leader-card featured reveal">
-        <div class="avatar">HMD</div>
-        <div class="role-badge">Finance Leadership</div>
-        <h3>Hoang Manh Duc</h3>
-        <div class="title">Strategic Financial Architect</div>
-        <p class="bio">Kiến trúc sư tài chính chiến lược thúc đẩy xuất sắc tổ chức. Cung cấp giám sát tài chính toàn diện, hiệu quả vận hành và chiến lược tăng trưởng bền vững tạo giá trị đo lường được cho các bên liên quan. Năng lực cốt lõi: hoạch định tài chính chiến lược, tối ưu hóa vận hành, quản trị rủi ro và tạo giá trị cho bên liên quan trong các môi trường kinh doanh phức tạp.</p>
-      </div>
-      <!-- CEO -->
       <div class="leader-card reveal">
-        <div class="avatar">NMP</div>
-        <div class="role-badge">CEO</div>
+        <img class="avatar-img" src="assets/phuong.png" alt="Nguyen Minh Phuong">
+        <div class="role-badge">External Engagement</div>
         <h3>Nguyen Minh Phuong</h3>
-        <div class="title">Chief Executive Officer</div>
+        <div class="title">Vice Provost for External Engagement</div>
         <p class="bio">Doanh nhân tầm nhìn xây dựng hệ sinh thái đổi mới thịnh vượng. Biến cơ hội thị trường thành dự án khả mở rộng qua hợp tác chiến lược với các tổ chức toàn cầu. Trao quyền cho doanh nghiệp mới đạt tăng trưởng bền vững.</p>
       </div>
-      <!-- CAIO -->
       <div class="leader-card reveal">
-        <div class="avatar">NHT</div>
-        <div class="role-badge">CAIO</div>
+        <img class="avatar-img" src="assets/thanh.png" alt="Nguyen Ha Thanh">
+        <div class="role-badge">AI</div>
         <h3>Nguyen Ha Thanh</h3>
         <div class="title">Chief AI Officer</div>
         <p class="bio">Tiên phong đổi mới AI ứng dụng trí tuệ neuro-symbolic và mô hình ngôn ngữ lớn giải quyết thách thức thể chế phức tạp. Cung cấp giải pháp AI tiên tiến tăng cường hệ thống ra quyết định và tạo lợi thế cạnh tranh.</p>
       </div>
-      <!-- CFO -->
       <div class="leader-card reveal">
-        <div class="avatar">HHH</div>
-        <div class="role-badge">CFO</div>
+        <img class="avatar-img" src="assets/hai.png" alt="Ho Hong Hai">
+        <div class="role-badge">Security &amp; Safety</div>
         <h3>Ho Hong Hai</h3>
-        <div class="title">Chief Financial Officer</div>
+        <div class="title">Vice Provost for Security and Safety</div>
         <p class="bio">Lãnh đạo xuất sắc tài chính với 17 năm kinh nghiệm giảng dạy và tư vấn quốc tế. Xây dựng khung tài chính vững chắc, tối ưu phân bổ vốn và thúc đẩy tạo giá trị kinh tế qua phân tích dữ liệu.</p>
       </div>
-      <!-- COO -->
       <div class="leader-card reveal">
-        <div class="avatar">NTT</div>
-        <div class="role-badge">COO</div>
+        <img class="avatar-img" src="assets/duc.jpg" alt="Hoang Manh Duc">
+        <div class="role-badge">Finance</div>
+        <h3>Hoang Manh Duc</h3>
+        <div class="title">Chief Financial Officer</div>
+        <p class="bio">Kiến trúc sư tài chính chiến lược thúc đẩy xuất sắc tổ chức. Cung cấp giám sát tài chính toàn diện, hiệu quả vận hành và chiến lược tăng trưởng bền vững tạo giá trị đo lường được cho các bên liên quan.</p>
+      </div>
+      <div class="leader-card reveal">
+        <img class="avatar-img" src="assets/trung.webp" alt="Nguyen Thanh Trung">
+        <div class="role-badge">Operations</div>
         <h3>Nguyen Thanh Trung</h3>
         <div class="title">Chief Operating Officer</div>
         <p class="bio">Chuyên gia chiến lược vận hành bền vững thúc đẩy chuyển đổi xanh và đổi mới thông minh. Tối ưu quy trình vận hành đồng thời thúc đẩy trách nhiệm môi trường, tạo giá trị qua thực hành kinh doanh bền vững.</p>
@@ -615,6 +643,31 @@ section{padding:5rem 0}
   </div>
 </section>
 
+<!-- ==================== CAMPUS GALLERY ==================== -->
+<section class="campus-gallery" id="campus">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto">
+      <span class="section-tag">Campus</span>
+      <h2 class="section-title">Kiến trúc <span class="gold-text">tương lai</span></h2>
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto">Campus 37ha với thiết kế xanh, công nghệ thông minh và không gian học thuật đẳng cấp quốc tế — nơi cảm hứng kiến tạo lãnh đạo.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="assets/arch-1.png" alt="Tòa nhà chính — Kiến trúc xanh">
+        <div class="gallery-caption"><span>Tòa nhà chính</span>Không gian học thuật với vườn đứng và sân nước</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/arch-2.png" alt="Khuôn viên — Cổng trường">
+        <div class="gallery-caption"><span>Khuôn viên</span>Đại lộ trung tâm với hồ phun nước và cảnh quan xanh</div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="assets/arch-3.png" alt="Tổng quan campus — Phối cảnh trên không">
+        <div class="gallery-caption"><span>Tổng quan</span>Phối cảnh toàn cảnh campus 37ha từ trên cao</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ==================== ROADMAP ==================== -->
 <section class="roadmap" id="roadmap">
   <div class="container">
@@ -655,9 +708,9 @@ section{padding:5rem 0}
   </div>
   <div class="container">
     <div class="offer-content reveal">
-      <div class="offer-badge">⚡ Ưu đãi độc quyền — Tháng 7/2026</div>
+      <div class="offer-badge">⚡ Ưu đãi độc quyền — Đăng ký trước 8/8/2026</div>
       <h2>Giảm <span class="gold-text">50%</span> học phí<br>dành cho cán bộ Vingroup</h2>
-      <p>Chương trình ưu đãi đặc biệt dành riêng cho cán bộ, nhân viên Vingroup đăng ký nhập học tại Mentora University trong tháng 7/2026. Cơ hội trở thành thế hệ lãnh đạo AI-Native đầu tiên — với chi phí chỉ bằng một nửa.</p>
+      <p>Chương trình ưu đãi đặc biệt dành riêng cho cán bộ, nhân viên Vingroup đăng ký nhập học tại Mentora University trước ngày 8/8/2026. Cơ hội trở thành thế hệ lãnh đạo AI-Native đầu tiên — với chi phí chỉ bằng một nửa.</p>
       <div class="offer-features">
         <div class="offer-feature">
           <div class="check">✓</div>
@@ -773,7 +826,7 @@ section{padding:5rem 0}
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Mentora University. Ưu đãi giảm 50% học phí dành cho cán bộ Vingroup — Tháng 7/2026.</p>
+      <p>© 2026 Mentora University. Ưu đãi giảm 50% học phí dành cho cán bộ Vingroup — Đăng ký trước 8/8/2026.</p>
     </div>
   </div>
 </footer>
@@ -800,8 +853,8 @@ document.querySelectorAll('.nav-links a').forEach(a => {
 });
 
 // ==================== COUNTDOWN ====================
-// Target: end of July 2026
-const target = new Date('2026-07-31T23:59:59+07:00').getTime();
+// Target: August 8, 2026
+const target = new Date('2026-08-08T23:59:59+07:00').getTime();
 function updateCountdown() {
   const now = Date.now();
   const diff = target - now;
